@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sweets</title>
+<link href="style.css" rel="stylesheet">
+<script src="shop.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body onload="filterSelection('all')">
+<div class="main">
+<h1>Sweets <b>STORE</b></h1>
+<div class="input-container">
+  <i class="fa fa-search"></i>
+  <input class="input-field" id="search" type="search" placeholder="Here...." name="search" onkeyup="func()">
+</div>
+</div>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('cakes')"> CAKES</button>
+  <button class="btn" onclick="filterSelection('cup')"> CUP CAKES</button>
+  <button class="btn" onclick="filterSelection('sweets')"> SWEETS</button>
+  <button class="btn" onclick="filterSelection('donut')"> DONUT</button>
+</div>
+<div class="row">
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c1.jpg"><br>
+      <h4>Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p1.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 15</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s1.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 20</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d1.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 30</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c2.jpg"><br>
+      <h4>Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p2.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s2.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 15</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d2.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c3.jpg"><br>
+      <h4>Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p3.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 15</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s3.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d3.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c4.jpg"><br>
+      <h4>Cakes</h4>
+      <p>$ 30</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p4.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s4.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d4.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c5.jpg"><br>
+      <h4>Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p5.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s5.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d5.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+      <img src="./images/c6.jpeg"><br>
+      <h4>Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column cup">
+    <div class="content">
+      <img src="./images/p6.jpg"><br>
+      <h4>Cup Cakes</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column sweets">
+    <div class="content">
+      <img src="./images/s6.jpg"><br>
+      <h4>Sweets</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+  <div class="column donut">
+    <div class="content">
+      <img src="./images/d6.jpg"><br>
+      <h4>Donut</h4>
+      <p>$ 10</p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
